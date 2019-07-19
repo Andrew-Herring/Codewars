@@ -32,7 +32,7 @@ function fakeBin(x){
    for (i = 0; i < x.length; i++){
     //  x is inititally a string, change the value into an integer
      let num = parseInt(x)
-    //  check each index value, if less than 5 aka 4 and below, assign 0
+    //  check each index value, if less than 5, assign 0
      if (x[i] < 5) {
        num = 0
       //  otherwise assign 1
