@@ -16,3 +16,26 @@ function squareSum(numbers){
   })
   return sTotal
   }
+
+
+
+  function squareSum(numbers){
+    return numbers.map(square).reduce(sum);
+  }
+  
+  function square(number) {
+    return number * number;
+  }
+  
+  function sum(firstNumber, secondNumber) {
+    return firstNumber + secondNumber;
+  }
+
+
+
+
+  function squareSum(numbers){
+    return numbers.reduce(function(sum, n){
+      return (n*n) + sum;
+    }, 0)
+  }
